@@ -77,7 +77,7 @@ function App() {
 const [loadingStudents, setLoadingStudents] = useState(true);
 
 useEffect(() => {
-  fetch("http://localhost:5000/api/students")
+  fetch("https://ai-student-information-systemserver.onrender.com/api/students")
     .then((res) => res.json())
     .then((data) => {
       setStudents(data);
@@ -132,7 +132,7 @@ const handleAddStudent = async (e) => {
   e.preventDefault();
 
   try {
-    const response = await fetch("http://localhost:5000/api/students", {
+    const response = await fetch("https://ai-student-information-systemserver.onrender.comhttps://ai-student-information-systemserver.onrender.comhttps://ai-student-information-systemserver.onrender.com/api/students", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
