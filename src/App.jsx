@@ -133,6 +133,8 @@ const handleAddStudent = async (e) => {
 
   try {
     const response = await fetch("https://ai-student-information-systemserver.onrender.com/api/students",{
+     
+    method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
