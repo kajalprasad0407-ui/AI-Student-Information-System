@@ -132,8 +132,7 @@ const handleAddStudent = async (e) => {
   e.preventDefault();
 
   try {
-    const response = await fetch("https://ai-student-information-systemserver.onrender.comhttps://ai-student-information-systemserver.onrender.comhttps://ai-student-information-systemserver.onrender.com/api/students", {
-      method: "POST",
+    const response = await fetch("https://ai-student-information-systemserver.onrender.com/api/students",{
       headers: {
         "Content-Type": "application/json",
       },
